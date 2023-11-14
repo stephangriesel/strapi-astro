@@ -12,29 +12,30 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Content": {
+    "content": {
       "type": "richtext"
     },
-    "Excerpt": {
+    "excerpt": {
       "type": "string"
     },
-    "Visibility": {
+    "visibility": {
       "type": "boolean"
     },
-    "FeaturedImage": {
+    "featuredImage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "ReadingTime": {
+    "readingTime": {
       "type": "string"
     },
     "author": {
