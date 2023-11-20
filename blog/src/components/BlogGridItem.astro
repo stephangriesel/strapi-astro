@@ -3,8 +3,8 @@ const { post } = Astro.props;
 const { slug, featuredImage, title, excerpt, author } = post.attributes;
 const url = import.meta.env.STRAPI_URL;
 
-const authorImage = author.data.attributes.bioImage.data.attributes.url || null;
-const postImage = featuredImage.data.attributes.url || null;
+const authorImage = author?.data?.attributes?.bioImage?.data?.attributes?.url || null;
+const postImage = featuredImage?.data?.attributes?.url || null;
 ---
 
 <div
@@ -46,4 +46,4 @@ const postImage = featuredImage.data.attributes.url || null;
       </div>
     </div>
   </a>
-</div>
+</div> 
